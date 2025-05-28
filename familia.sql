@@ -1,7 +1,7 @@
 -- Active: 1748445201108@@127.0.0.1@3307@familia
-DROP DATABASE IF EXISTS 'familia'
-CREATE DATABASE 'familia'
-USE 'familia'
+DROP DATABASE IF EXISTS `familia`;
+CREATE DATABASE `familia`;
+USE `familia`;
 
 CREATE TABLE `Integrantes`(
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
