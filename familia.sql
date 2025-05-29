@@ -1,12 +1,13 @@
--- Active: 1748445201108@@127.0.0.1@3307@familia
+-- Active: 1748518169470@@127.0.0.1@3309@familia
 DROP DATABASE IF EXISTS `familia`;
 CREATE DATABASE `familia`;
 USE `familia`;
 
+DROP TABLES IF EXISTS `Integrantes`;
 CREATE TABLE `Integrantes`(
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
     `nacimiento` DATE,
-    name VARCHAR(255)
+    name VARCHAR(220)
 ) COMMENT '';
 
 DROP TABLE IF EXISTS `Mascotas`;
