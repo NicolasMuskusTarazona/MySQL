@@ -1,4 +1,4 @@
--- Active: 1748518169470@@127.0.0.1@3309@familia
+-- Active: 1748556546097@@127.0.0.1@3307@familia
 DROP DATABASE IF EXISTS `familia`;
 CREATE DATABASE `familia`;
 USE `familia`;
@@ -14,7 +14,10 @@ DROP TABLE IF EXISTS `Mascotas`;
 CREATE TABLE `Mascotas`(
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
     `nacimiento` DATE,
-    name VARCHAR(255)
+    name VARCHAR(255),
+    integrante_id INT,
+    `TieneMascota` BOOLEAN,
+    FOREIGN KEY (integrante_id) REFERENCES Integrantes(id)
 ) COMMENT '';
 
 DROP TABLE IF EXISTS `Ubicacion`;

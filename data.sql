@@ -1,4 +1,4 @@
--- Active: 1748518169470@@127.0.0.1@3309@familia
+-- Active: 1748556546097@@127.0.0.1@3307@familia
 
 /* Borrar todos los datos*/
 DELETE FROM Integrantes;
@@ -24,3 +24,6 @@ WHERE id = 5;
 /* Eliminar varios datos especificos*/
 DELETE FROM Integrantes
 WHERE id IN (1,3,4);
+
+
+GRANT SELECT, INSERT ON `Integrantes` TO 1;
